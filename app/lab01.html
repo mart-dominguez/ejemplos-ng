@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="laboratorio07">
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript" src="lib/angular/angular.js"></script>
+<link rel="stylesheet" href="lib/estilos.css" type="text/css"> 
+<title>Insert title here</title>
+</head>
+<body ng-controller="miController">
+<h1>Primer aplicacion AngularJS</h1>
+<p>{{valorTest}}</p>
+<p>La mitad del valor de test <span ng-bind="mitadValor"></span></p>
+<p ng-class="{'estilo1':aplicarEstilo1, 'estilo2':!aplicarEstilo1}">La mitad del valor de test INICIAL es <span>{{ ::mitadValor}}</span></p>
+
+<button ng-click="refrescar()">Refrescar</button>
+<ul>
+	<li ng-repeat="nro in historial">{{nro.indice }}| {{nro.valor}}</li>
+</ul>
+<script type="text/javascript" src="lib/app.js"></script>
+</body>
+</html>
