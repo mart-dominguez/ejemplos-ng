@@ -1,0 +1,55 @@
+#sorteo{
+	float:left;
+}
+
+#mesaRuleta{
+	float:left;
+}
+
+#nros{
+	padding:2px;
+	width: 126px;
+	background-color: green;
+	float: left;
+	clear:both;
+	display: inline;
+	border-bottom: 2px;
+	border-color: yellow;
+}
+.nro{
+	width:40px;
+	height: 40px;
+	float: left;
+	margin: 1px;
+	text-align: center;
+	cursor: pointer;
+}
+.cero{
+	width:120px;
+	height: 20px;
+	float: left;
+	margin: 1px;
+	text-align: center;
+}
+
+.rojo{
+	background-color: red;
+	color: white;
+}
+
+.negro{
+	background-color: black;
+	color: yellow;
+}
+
+.apostado{
+	width:40px;
+	height: 40px;
+	float: left;
+	margin: 1px;
+	text-align: center;
+	background-color: yellow;
+	color: blue;
+	cursor: pointer;
+	font-weight: bold;
+}

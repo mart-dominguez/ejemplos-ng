@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="notasApp">
+<head>
+<meta charset="utf-8">
+<title>The Single Page Blogger</title>
+</head>
+<body>
+		<br />
+		<header>
+			<h1>Notas</h1>
+			<p>Lista de notas del usuario</p>
+		</header>
+		<div ng-view></div>
+		<footer >
+			<p>
+				The Single Page Blogger
+			</p>
+		</footer>
+</body>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="scripts/services/notasService.js"></script>
+<script src="scripts/controllers/notasController.js"></script>
+<script src="app.js"></script>
+</html>

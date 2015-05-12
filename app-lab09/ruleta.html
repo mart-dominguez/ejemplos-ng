@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="appRuleta">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ruleta</title>
+<link rel="stylesheet" href="estilos/estilo1.css">
+<script type="text/javascript" src="lib/angular/angular.js"></script>
+</head>
+<body ng-controller="RuletaCtrl">
+<section id="mesaRuleta">
+<div id="nros">
+	<div  ng-repeat="nro in tablero" ng-class="nro.color" ng-click="apostar(nro)">{{nro.valor}}</d>
+</div>
+</section>
+<div id="sorteo" >
+<span ng-show="nroSorteado > 0"> Sorteando...</span>
+{{nroSorteado}}
+</div>
+<div id="resultado">
+<button ng-click="iniciarSorteo()">Sortear</button>
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="servicio.js"></script>
+</body>
+</html>

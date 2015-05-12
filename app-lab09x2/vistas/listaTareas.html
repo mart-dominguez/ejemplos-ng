@@ -1,0 +1,12 @@
+<p><button ng-click="cargar()">Cargar Tareas</button></p>
+<p><button ng-click="nuevaTarea()">Nueva</button></p>
+<section ng-repeat="tarea in listaTareas">
+	<article ng-class="{'destacado': tarea.destacar}" ng-show="tarea.mostrar">
+		<h1>{{tarea.titulo}}</h1>
+		<div>{{tarea.detalle}}</div>
+		<div>
+			<a ng-click="destacar(tarea)">destacar</a>
+			<a ng-click="finalizar(tarea)">finalizada</a>
+		</div>
+	</article>		
+</section>
